@@ -3,7 +3,7 @@ import z from 'zod'
 import pgk from "bcryptjs"
 import {prisma} from './lib/prisma.js'
 
-const {compare, bcrypt} = pgk
+const {hash} = pgk
 
 const app = fastify()
 
